@@ -1,4 +1,4 @@
-exports.run = (input) => {
+const run = (input) => {
   part1: for (let i = 0; i <= input.length; i++) {
     for (let j = i; j <= input.length; j++) {
       let ii = parseInt(input[i])
@@ -24,3 +24,4 @@ exports.run = (input) => {
     }
   }
 }
+exports.run = run

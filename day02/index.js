@@ -1,4 +1,4 @@
-exports.run = (input) => {
+const run = (input) => {
   let result_part_1 = 0
   let result_part_2 = 0
 
@@ -17,6 +17,7 @@ exports.run = (input) => {
   console.log('Solution part 1:', result_part_1)
   console.log('Solution part 2:', result_part_2)
 }
+exports.run = run
 
 function validationPart1(result, password, letter, min, max) {
   let nbOcc = occurencesNumber(password, letter)
