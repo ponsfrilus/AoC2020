@@ -1,10 +1,18 @@
 const { readFileSync } = require('fs')
+const utils = require('./utils.js')
 
 const day = process.argv.slice(2)
 if (day.length == 0 || day[0] < 1 || day[0] > 31) {
   console.error('Please specify the day...')
   process.exit()
 }
+
+const mode = process.argv.slice(3)
+if (mode == 'create') {
+  utils.createDay(day[0])
+  process.exit()
+}
+
 console.log(
   'Processing day: ',
   day[0].padStart(2, '0'),
