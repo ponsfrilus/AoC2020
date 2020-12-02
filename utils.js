@@ -4,7 +4,7 @@ exports.createDay = (day) => {
   let dir = `./day${day.padStart(2, '0')}`
   createDayDirectory(dir)
   createDayInputFile(dir, day)
-  createDayIndexFile(dir)
+  createDayIndexFile(dir, day)
 }
 
 const createDayDirectory = (dir) => {
