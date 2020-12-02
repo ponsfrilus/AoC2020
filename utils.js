@@ -17,7 +17,7 @@ const createDayDirectory = (dir) => {
 
 const createDayInputFile = (dir, day) => {
   let file = `${dir}/input.txt`
-  let dummyData = `Please change me with the content of https://adventofcode.com/2020/day/${day}/input`
+  let dummyData = `Please replace me with the content of https://adventofcode.com/2020/day/${day}/input`
   createFile(file, dummyData)
 }
 
