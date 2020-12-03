@@ -17,7 +17,7 @@ Read more about AoC [here](https://adventofcode.com/2020/about).
 * Run `node index.js {day}` where `{day}` is the date of the calendar, e.g. 
   `node index.js 1` for the first of december
 
-### Run the code for all day
+### Run the code for all days
 * Change the `input.txt` files with your puzzle inputs
 * Run `node index.js all`
 
