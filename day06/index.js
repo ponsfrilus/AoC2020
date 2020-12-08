@@ -11,6 +11,9 @@ const run = (input) => {
     solution1 += dedup.length
   }
 
+  console.log(part1)
+  console.log(inputs[1])
+
   let sol2 = []
   for (let i in part1) {
     sol2[i] = 0
@@ -33,12 +36,12 @@ const run = (input) => {
 exports.run = run
 
 const formatData = (data) => {
-  data = data.join("\n")
-  let declaration = data.split(/\n\n/);
+  data = data.join('\n')
+  let declaration = data.split(/\n\n/)
   let input1 = []
   let input2 = []
-  for (let i=0; i < declaration.length; i++) {
-    keysValues = declaration[i].split(" ").join("\n").split(/\n/)
+  for (let i = 0; i < declaration.length; i++) {
+    keysValues = declaration[i].split(' ').join('\n').split(/\n/)
     input1.push(keysValues.join(''))
     input2.push(keysValues)
   }
