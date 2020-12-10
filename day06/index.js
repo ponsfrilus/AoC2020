@@ -11,9 +11,6 @@ const run = (input) => {
     solution1 += dedup.length
   }
 
-  console.log(part1)
-  console.log(inputs[1])
-
   let sol2 = []
   for (let i in part1) {
     sol2[i] = 0
